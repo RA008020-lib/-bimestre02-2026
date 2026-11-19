@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 03 - Cadastro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5 mb-5">
+        <form>
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <label for="nomeFantasia" class="form-label text-muted">Nome Fantasia ou primeiro nome</label>
+                    <input type="text" class="form-control" id="nomeFantasia">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted d-block">Pessoa</label>
+                    <div class="form-check form-check-inline mt-1">
+                        <input class="form-check-input" type="radio" name="tipoPessoa" id="pessoaFisica" value="fisica">
+                        <label class="form-check-label text-muted" for="pessoaFisica">Física</label>
+                    </div>
+                    <div class="form-check form-check-inline mt-1">
+                        <input class="form-check-input" type="radio" name="tipoPessoa" id="pessoaJuridica" value="juridica">
+                        <label class="form-check-label text-muted" for="pessoaJuridica">Jurídica</label>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <label for="razaoSocial" class="form-label text-muted">Razão</label>
+                    <input type="text" class="form-control" id="razaoSocial">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="cnpj" class="form-label text-muted">CNPJ</label>
+                    <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                </div>
+
+                <div class="col-md-8">
+                    <label for="endereco" class="form-label text-muted">Endereço</label>
+                    <input type="text" class="form-control" id="endereco">
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label text-muted">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label text-muted">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="col-md-3">
+                    <label for="estado" class="form-label text-muted">Estado</label>
+                    <select id="estado" class="form-select">
+                        <option selected>Minas Gerais</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="cep" class="form-label text-muted">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="00000-000">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="telefone" class="form-label text-muted">Telefone</label>
+                    <input type="text" class="form-control" id="telefone">
+                </div>
+                <div class="col-md-4">
+                    <label for="celular" class="form-label text-muted">Celular</label>
+                    <input type="text" class="form-control" id="celular">
+                </div>
+                <div class="col-md-4">
+                    <label for="fax" class="form-label text-muted">Fax</label>
+                    <input type="text" class="form-control" id="fax">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="contato" class="form-label text-muted">Contato</label>
+                    <input type="text" class="form-control" id="contato">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label text-muted">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="col-12 mt-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="receberEmails" checked>
+                        <label class="form-check-label text-muted" for="receberEmails">
+                            Receber e-mails de aviso sobre novas licitações
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <label class="form-label text-muted">Tipo de empresa</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipoEmpresa" id="microEmpresa">
+                        <label class="form-check-label text-muted" for="microEmpresa">
+                            MICRO EMPRESAS / EMPRESAS DE PEQUENO PORTE
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipoEmpresa" id="demaisFormas">
+                        <label class="form-check-label text-muted" for="demaisFormas">
+                            DEMAIS FORMAS DE CONSTITUIÇÃO
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12 text-end mt-3">
+                    <button type="button" class="btn btn-primary">Salvar cadastro</button>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <p class="text-muted" style="font-size: 0.9em;">
+                        ATENÇÃO: Este cadastro não substitui o cadastro de fornecedores do município de São Sebastião do Paraíso
+                    </p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
